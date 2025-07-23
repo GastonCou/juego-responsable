@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/juego-responsable/static/css/main.ef8a8120.css",
-    "main.js": "/juego-responsable/static/js/main.15e9185e.js",
+    "main.js": "/juego-responsable/static/js/main.02285a9d.js",
     "static/js/977.d2a70f58.chunk.js": "/juego-responsable/static/js/977.d2a70f58.chunk.js",
     "static/js/455.4a9805de.chunk.js": "/juego-responsable/static/js/455.4a9805de.chunk.js",
     "index.html": "/juego-responsable/index.html",
     "main.ef8a8120.css.map": "/juego-responsable/static/css/main.ef8a8120.css.map",
-    "main.15e9185e.js.map": "/juego-responsable/static/js/main.15e9185e.js.map",
+    "main.02285a9d.js.map": "/juego-responsable/static/js/main.02285a9d.js.map",
     "977.d2a70f58.chunk.js.map": "/juego-responsable/static/js/977.d2a70f58.chunk.js.map",
     "455.4a9805de.chunk.js.map": "/juego-responsable/static/js/455.4a9805de.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef8a8120.css",
-    "static/js/main.15e9185e.js"
+    "static/js/main.02285a9d.js"
   ]
 }
