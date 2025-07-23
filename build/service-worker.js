@@ -7,18 +7,21 @@ const urlsToCache = [
   `${BASE}/manifest.json`,
   `${BASE}/expirado.html`,
   `${BASE}/instalado.html`,
+  `${BASE}/favicon.ico`,
   `${BASE}/icon-192.png`,
   `${BASE}/icon-512.png`,
+  `${BASE}/logo-caja.png`,
   `${BASE}/fondo-horizontal.png`,
   `${BASE}/fondo-vertical.png`,
   `${BASE}/Caratula-fondo-horizontal.png`,
+  `${BASE}/Caratula-fondo-vertical.png`,
   `${BASE}/Sonidos/Musica-Correcta.mp3`,
   `${BASE}/Sonidos/Musica-Fondo.mp3`,
   `${BASE}/Sonidos/Musica-Incorrecta.mp3`,
   `${BASE}/Sonidos/Musica-MensajeResponsable.mp3`,
   `${BASE}/Sonidos/Musica-Retirarse-Ganador.mp3`,
   `${BASE}/Sonidos/Musica-Siguiente.mp3`,
-  // 🔁 Agregá acá cualquier otro archivo de /public que uses
+  // Agregá más archivos si usás otros
 ];
 
 // Cacheo inicial
