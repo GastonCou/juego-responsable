@@ -49,7 +49,7 @@ export default function JuegoResponsable() {
 
   useEffect(() => {
     if (!fondoAudioRef.current) {
-      const audio = new Audio('/sonidos/Musica-Fondo.mp3');
+      const audio = new Audio(`${process.env.PUBLIC_URL}/Sonidos/Musica-Fondo.mp3`);
       audio.loop = true;
       audio.volume = 0.4;
       audio.play().catch((e) => {
@@ -68,9 +68,9 @@ export default function JuegoResponsable() {
   const pregunta = preguntas[paso];
   const dificultad = dificultadPorNivel[nivel] || '';
   const fondo =
-    window.innerHeight > window.innerWidth
-      ? '/fondo-vertical.png'
-      : '/fondo-horizontal.png';
+  window.innerHeight > window.innerWidth
+    ? `${process.env.PUBLIC_URL}/fondo-vertical.png`
+    : `${process.env.PUBLIC_URL}/fondo-horizontal.png`;
 
   function guardarNivelMaximoAlcanzado(nivelAlcanzado) {
     const maxPrevio = parseInt(localStorage.getItem('sesion_nivel_maximo')) || 0;
