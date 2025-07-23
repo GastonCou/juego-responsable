@@ -1,22 +1,23 @@
-const CACHE_NAME = 'juego-responsable-v1';
+const BASE = '/juego-responsable';
 
 const urlsToCache = [
-  '/', // raíz
-  '/index.html',
-  '/manifest.json',
-  '/expirado.html',
-  '/instalado.html',
-  '/icon-192.png',
-  '/icon-512.png',
-  '/fondo-horizontal.png',
-  '/fondo-vertical.png',
-  '/Caratula-fondo-horizontal.png',
-  '/Sonidos/Musica-Correcta.mp3',
-  '/Sonidos/Musica-Fondo.mp3',
-  '/Sonidos/Musica-Incorrecta.mp3',
-  '/Sonidos/Musica-MensajeResponsable.mp3',
-  '/Sonidos/Musica-Retirarse-Ganador.mp3',
-  '/Sonidos/Musica-Siguiente.mp3',
+  `${BASE}/`,
+  `${BASE}/index.html`,
+  `${BASE}/manifest.json`,
+  `${BASE}/expirado.html`,
+  `${BASE}/instalado.html`,
+  `${BASE}/icon-192.png`,
+  `${BASE}/icon-512.png`,
+  `${BASE}/fondo-horizontal.png`,
+  `${BASE}/fondo-vertical.png`,
+  `${BASE}/Caratula-fondo-horizontal.png`,
+  `${BASE}/Sonidos/Musica-Correcta.mp3`,
+  `${BASE}/Sonidos/Musica-Fondo.mp3`,
+  `${BASE}/Sonidos/Musica-Incorrecta.mp3`,
+  `${BASE}/Sonidos/Musica-MensajeResponsable.mp3`,
+  `${BASE}/Sonidos/Musica-Retirarse-Ganador.mp3`,
+  `${BASE}/Sonidos/Musica-Siguiente.mp3`,
+
   // 🔁 Agregá acá cualquier otro archivo de /public que uses
 ];
 
