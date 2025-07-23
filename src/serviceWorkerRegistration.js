@@ -48,7 +48,10 @@ function registerValidSW(swUrl, config) {
               if (config?.onSuccess) config.onSuccess(registration);
 
               // 👇 Mostrar mensaje de éxito SOLO en primera instalación
-              window.location.href = "/instalado.html";
+              if (window.matchMedia('(display-mode: standalone)').matches) {
+                // Solo redirigir si se abrió desde la app instalada
+                window.location.href = "/instalado.html";
+              }
             }
           }
         };
