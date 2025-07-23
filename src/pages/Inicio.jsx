@@ -11,19 +11,15 @@ export default function Inicio() {
     return () => window.removeEventListener('resize', manejarResize);
   }, []);
 
-  const fondo = esVertical ? '/Caratula-fondo-vertical.png' : '/Caratula-fondo-horizontal.png';
+  const fondo = esVertical
+    ? `${process.env.PUBLIC_URL}/Caratula-fondo-vertical.png`
+    : `${process.env.PUBLIC_URL}/Caratula-fondo-horizontal.png`;
 
   const manejarComenzar = () => {
-    // ✅ Registrar nuevo jugador
     const jugadoresPrevios = parseInt(localStorage.getItem('estad_jugadores')) || 0;
     localStorage.setItem('estad_jugadores', jugadoresPrevios + 1);
-
-    // ✅ Iniciar nueva sesión de tiempo
     localStorage.setItem('estad_inicio_tiempo', Date.now());
-
-    // ✅ Resetear niveles alcanzados para esta sesión (clave para estadísticas correctas)
     localStorage.setItem('sesion_nivel_maximo', '0');
-
     navigate('/juego');
   };
 
@@ -48,7 +44,6 @@ export default function Inicio() {
         COMENZAR
       </button>
 
-      {/* Área secreta para ver estadísticas */}
       <div
         onDoubleClick={manejarEstadisticas}
         className="absolute bottom-2 right-2 w-8 h-8 z-50"
