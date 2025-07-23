@@ -10,12 +10,12 @@ function App() {
     const hoy = new Date();
     const fechaFin = new Date('2025-08-01T00:00:00');
     if (hoy > fechaFin) {
-      window.location.href = "/expirado.html";
+      window.location.href = "/juego-responsable/expirado.html"; // 👈 importante para que funcione bien en GitHub Pages
     }
   }, []);
 
   return (
-    <Router>
+    <Router basename="/juego-responsable"> {/* 👈 agregado el basename */}
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/juego" element={<JuegoResponsable />} />
