@@ -1,3 +1,4 @@
+const CACHE_NAME = 'v1-juego-responsable';
 const BASE = '/juego-responsable';
 
 const urlsToCache = [
@@ -17,7 +18,6 @@ const urlsToCache = [
   `${BASE}/Sonidos/Musica-MensajeResponsable.mp3`,
   `${BASE}/Sonidos/Musica-Retirarse-Ganador.mp3`,
   `${BASE}/Sonidos/Musica-Siguiente.mp3`,
-
   // 🔁 Agregá acá cualquier otro archivo de /public que uses
 ];
 
