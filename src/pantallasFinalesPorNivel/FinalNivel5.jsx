@@ -9,7 +9,7 @@ export default function FinalNivel5() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const audio = new Audio('/sonidos/Musica-Retirarse-Ganador.mp3');
+    const audio = new Audio(`${process.env.PUBLIC_URL}/Sonidos/Musica-Retirarse-Ganador.mp3`);
     audio.volume = 0.4;
     audio.play().catch((e) => {
       console.warn('No se pudo reproducir la música de victoria:', e);
@@ -40,7 +40,7 @@ export default function FinalNivel5() {
     <div
       className="h-screen flex flex-col relative text-white"
       style={{
-        backgroundImage: `url(/fondo-horizontal.png)`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/fondo-horizontal.png)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

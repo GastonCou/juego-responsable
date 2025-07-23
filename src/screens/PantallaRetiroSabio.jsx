@@ -23,7 +23,7 @@ export default function PantallaRetiroSabio() {
   ];
 
   useEffect(() => {
-    const audio = new Audio(process.env.PUBLIC_URL + '/sonidos/Musica-Retirarse-Ganador.mp3');
+    const audio = new Audio(`${process.env.PUBLIC_URL}/Sonidos/Musica-Retirarse-Ganador.mp3`);
     audio.volume = 0.4;
     audio.loop = true;
     audio.play().catch((err) => console.error('Error al reproducir el audio:', err));
@@ -54,7 +54,7 @@ export default function PantallaRetiroSabio() {
   }, [nivel]);
 
   const handleVolver = () => {
-    const sonido = new Audio(process.env.PUBLIC_URL + '/sonidos/Musica-Siguiente.mp3');
+    const sonido = new Audio(`${process.env.PUBLIC_URL}/Sonidos/Musica-Siguiente.mp3`);
     sonido.play().catch(err => console.error('Error al reproducir sonido:', err));
     setTimeout(() => {
       navigate('/');

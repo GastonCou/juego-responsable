@@ -1,7 +1,7 @@
 const sonidosActivos = [];
 
 export function reproducirSonido(nombreArchivo, volumen = 1.0) {
-  const sonido = new Audio(`/sonidos/${nombreArchivo}`);
+  const sonido = new Audio(`${process.env.PUBLIC_URL}/Sonidos/${nombreArchivo}`);
   sonido.volume = volumen;
 
   // Retener temporalmente en memoria

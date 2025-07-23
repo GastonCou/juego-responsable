@@ -6,7 +6,7 @@ export default function DerrotaNivel5() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const audio = new Audio('/sonidos/Musica-Incorrecta.mp3');
+    const audio = new Audio(`${process.env.PUBLIC_URL}/Sonidos/Musica-Incorrecta.mp3`);
     audio.volume = 1;
     audio.play();
 
@@ -32,7 +32,7 @@ export default function DerrotaNivel5() {
   }, []);
 
   const manejarVolver = () => {
-    const clickSound = new Audio('/sonidos/Musica-Siguiente.mp3');
+    const clickSound = new Audio(`${process.env.PUBLIC_URL}/Sonidos/Musica-Siguiente.mp3`);
     clickSound.volume = 1;
     clickSound.play();
     setTimeout(() => navigate('/'), 200);

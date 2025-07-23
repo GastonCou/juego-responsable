@@ -5,7 +5,7 @@ export default function PreguntaActual({ pregunta, onResponder }) {
   if (!pregunta) return null;
 
   function manejarClick(op) {
-    reproducirSonido('Musica-Siguiente.mp3');
+    reproducirSonido('Musica-Siguiente.mp3'); // ✅ Asegurate que esta ruta coincide con tu service-worker.js (mayúsculas)
     onResponder(op);
   }
 
