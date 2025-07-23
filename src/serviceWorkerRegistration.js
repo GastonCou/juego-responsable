@@ -46,6 +46,9 @@ function registerValidSW(swUrl, config) {
             } else {
               console.log('Contenido cacheado para uso offline.');
               if (config?.onSuccess) config.onSuccess(registration);
+
+              // 👇 Mostrar mensaje de éxito SOLO en primera instalación
+              window.location.href = "/instalado.html";
             }
           }
         };

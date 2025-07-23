@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Inicio from './pages/Inicio';
 import JuegoResponsable from './pages/JuegoResponsable';
@@ -5,6 +6,14 @@ import PantallaRetiroSabio from './screens/PantallaRetiroSabio';
 import Estadisticas from './pages/Estadisticas'; // ✅ Nuevo import
 
 function App() {
+  useEffect(() => {
+    const hoy = new Date();
+    const fechaFin = new Date('2025-08-01T00:00:00');
+    if (hoy > fechaFin) {
+      window.location.href = "/expirado.html";
+    }
+  }, []);
+
   return (
     <Router>
       <Routes>
